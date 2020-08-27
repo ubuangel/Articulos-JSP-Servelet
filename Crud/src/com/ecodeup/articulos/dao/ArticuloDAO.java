@@ -15,7 +15,7 @@ import com.ecodeup.articulos.model.Conexion;
  * @autor: Elivar Largo
  * @web: www.ecodeup.com
  */
-
+//hola git
 public class ArticuloDAO {
 	private Conexion con;
 	private Connection connection;
@@ -25,7 +25,7 @@ public class ArticuloDAO {
 		con = new Conexion(jdbcURL, jdbcUsername, jdbcPassword);
 	}
 
-	// insertar artículo
+	// insertar artï¿½culo
 	public boolean insertar(Articulo articulo) throws SQLException {
 		String sql = "INSERT INTO articulos (id, codigo, nombre, descripcion, existencia, precio) VALUES (?, ?, ?,?,?,?)";
 		System.out.println(articulo.getDescripcion());
